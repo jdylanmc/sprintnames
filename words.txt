@@ -1,0 +1,538 @@
+﻿Abomination
+Adam Strange
+Admiral Ackbar
+Agnes
+Alicia
+Allen
+Allison
+Amanda Waller
+Anakin
+Andrew
+Anita
+Annihilus
+Ant-Man
+Aphrodite
+Apocalypse
+Apollo
+Aquaman
+Ares
+Artemis
+Athena
+Atom
+Audrey
+Bacchus
+Bane
+Barbara Gordon
+Batman
+Beast
+Betsy
+Bizzaro
+Black Adam
+Black Canary
+Black Lightning
+Black Panther
+Zelda
+Link
+Mario
+Luigi
+Black Widow
+Blade
+Blue Beetle
+Bob
+Gordon
+Freeman
+Boba Fett
+Booster Gold
+Brainiac
+Bucky Barnes
+Bullseye
+Captain America
+Captain Britain
+Captain Cold 
+Captain Marvel
+Carla
+Carmen
+Carnage
+Carol
+Cassandra Nova
+Catwoman
+Celia
+Cesar
+Cheetah
+Chewbacca
+Clayface
+Cleo
+Count Dooku
+Crow
+Cyborg Superman
+Cyclops
+Daredevil
+Dark Phoenix
+Darkseid
+Darth Vader
+David
+Deadpool
+Deadshot
+Dean
+Deathstroke
+Demeter 
+Dennis
+Despero
+Diana
+Dionysus
+Doctor Doom
+Doctor Light
+Doctor Octopus
+Doomsday
+Dora
+Dr. Strange
+Echo
+Edna
+Electro
+Elena
+Eloise
+Eros
+Fabian
+Falcon
+Faunus
+Felix
+Flash
+Floyd
+Fone Bone
+Fran
+Frances
+Frederic
+Galactus
+Gambit
+General Ross
+General Zod
+Georges
+Ghost Rider
+Gilbert
+Gloria
+Gorilla Grodd
+Governor
+Gracie
+Greedo
+Green Arrow
+Green Lantern
+Grendel
+Greta
+Groo
+Gustav
+Hades
+Han Solo
+Harley Quinn
+Hattie
+Hawkeye
+Hawkman
+Hera
+Hercules
+Hermes
+Herr Starr
+Hestia
+Hilda
+Hobgoblin
+Hortense
+Hugo
+Hulk
+Human Torch
+Igor
+Ike
+Inez
+Invisible Woman
+Ione
+Irene
+Iris
+Iron Fist
+Iron Man
+Isabel
+Isidore
+Ivan
+Jabba
+James Gordon
+Janet
+Jar Jar Binks
+Jean Grey
+Jeanne
+Jesse Custer
+Joan
+John Constantine
+Joker
+Jonah Hex
+Juan
+Judge Dredd
+Juggernaut
+Juno
+Jupiter
+Ka-Zar
+Kang The Conqueror
+Katrina
+Keith
+Kerberos
+Kid Miracleman
+Kingpin
+Kitty Pryde
+Klaus
+Kraven
+Lady Deathstrike
+Lando Calrissian
+Leader
+Lenny
+Lex Luthor
+Lili
+Lizard
+Lobot
+Loki
+Lucifer Morningstar
+Luis
+Luke
+Luke Cage
+M.O.D.O.K.
+Mace Windu
+Magneto
+Magog
+Mandarin
+Marilyn
+Mars
+Martian Manhunter
+Marv
+Mastermind
+Maul
+Mephisto
+Mercury
+Metallo
+Michelle
+Michonne
+Minerva 
+Mirror Master
+Misfits
+Mister Mxyzptlk
+Mitch
+Mitchell Hundred
+Mongul
+Moon Knight
+Mr. Freeze
+Mysterio
+Mystique
+Neptune
+Nick Fury
+Nightcrawler
+Noel
+Norman Osborn
+Nova
+Obi-Wan Kenobi
+Omega Red
+Omni-Man
+Opal
+Orpheus
+Ozymandias
+Padme
+Paloma
+Palpatine
+Pan
+Pandora
+Parallax
+Parasite
+Pegasus
+Penguin
+Pluto
+Poison Ivy
+Poseidon
+Professor X
+Professor Zoom
+Prometheus
+Proteus
+Punisher
+Qui-Gon Jinn
+Ra's Al Ghul
+Raphael
+Rasputin
+Red Skull
+Reed Richards
+Renee Montoya
+Rick Grimes
+Riddler
+Rita
+Robin
+Rocketeer
+Rorschach
+Roxanne
+Sabretooth
+Saint of Killers
+Sandman
+Sandy
+Savage Dragon
+Scarecrow
+Scott Pilgrim
+Sebastian Shaw
+Sebulba
+Sentinels
+Sgt. Rock
+Shade
+She-Hulk
+Shredder
+Silver Surfer
+Sinetsro
+Sinister
+Skywalker
+Spawn
+Spectre
+Spider Jerusalem
+Spider-Man
+Spirit
+Stan
+Storm
+Sub-Mariner
+Superboy
+Supergirl
+Superman
+Swamp Thing
+Talia Al Ghul
+Tarfful
+Thanos
+Thing
+Thor
+Tick
+Tomas
+Two-Face
+Ultron
+Vandal Savage
+Venom
+Venus
+Vesta
+Violator
+Vulcan
+Warrick
+Wasp
+Wildcat
+William Stryker
+Wilma
+Wolverine
+Wonder Woman
+Yoda
+Yorick Brown
+Zeus 
+Zoom
+Actinium
+Aluminum 
+Americium 
+Antimony 
+Argon
+Arsenic 
+Astatine 
+Barium 
+Berkelium 
+Beryllium 
+Bismuth 
+Bohrium 
+Boron 
+Bromine 
+Cadmium 
+Calcium 
+Californium 
+Carbon 
+Cerium 
+Cesium
+Chlorine
+Chromium 
+Cobalt 
+Copernicium 
+Copper 
+Curium 
+Darmstadtium 
+Dubnium 
+Dysprosium
+Einsteinium 
+Erbium
+Europium 
+Fermium 
+Flerovium
+Fluorine 
+Francium 
+Gadolinium 
+Gallium 
+Germanium 
+Gold 
+Hafnium 
+Hassium 
+Helium 
+Holmium 
+Hydrogen
+Indium 
+Iodine
+Iridium 
+Iron
+Krypton 
+Lanthanum 
+Lawrencium 
+Lead 
+Lithium 
+Livermorium
+Lutetium 
+Magnesium 
+Manganese
+Meitnerium 
+Mendelevium 
+Mercury 
+Molybdenum 
+Neodymium 
+Neon 
+Neptunium 
+Nickel 
+Niobium 
+Nitrogen 
+Nobelium 
+Osmium 
+Oxygen
+Palladium 
+Phosphorus 
+Platinum 
+Plutonium 
+Polonium 
+Potassium 
+Praseodymium
+Promethium 
+Protactinium 
+Radium 
+Radon 
+Rhenium 
+Rhodium 
+Roentgenium 
+Rubidium 
+Ruthenium 
+Rutherfordium 
+Samarium 
+Scandium 
+Seaborgium 
+Selenium 
+Silicon 
+Silver 
+Sodium
+Strontium 
+Sulfur 
+Tantalum 
+Technetium 
+Tellurium 
+Terbium 
+Thallium 
+Thorium 
+Thulium 
+Tin
+Titanium 
+Tungsten 
+Uranium 
+Vanadium 
+Xenon 
+Zinc 
+Zirconium
+Alicia Keys
+Hall & Oates
+Depeche Mode
+Pretenders
+Journey
+OutKast
+Mariah Carey
+Pearl Jam
+LL Cool J
+Green Day
+Elvis Costello
+Beastie Boys
+Bee Gees
+George Michael.
+Curtis Mayfield
+Earth, Wind and Fire
+Steely Dan
+ABBA
+Eminem
+Judas Priest
+Lynyrd Skynyrd
+Run-D.M.C.
+Rush
+Cure
+Van Morrison
+Janis Joplin
+R.E.M.
+Def Leppard
+Tupac Shakur
+Otis Redding
+Coldplay
+Justin Timberlake
+Doors
+Talking Heads
+Notorious B.I.G.
+Genesis
+Cream
+Whitney Houston
+Tom Petty & The Heartbreakers
+Cheap Trick
+Iggy & The Stooges
+KISS
+Peter Gabriel
+Public Enemy
+Little Richard
+Beyoncé
+Billy Joel
+Parliament-Funkadelic
+Rage Against The Machine
+Jay-Z
+Ramones
+Al Green
+Joni Mitchell
+Ray Charles
+Metallica
+Van Halen
+Police
+Kinks
+Fleetwood Mac
+Paul McCartney
+Johnny Cash
+Tina Turner
+Black Sabbath
+John Lennon
+Aerosmith
+Radiohead
+Elton John
+Neil Young
+Chuck Berry
+Bruce Springsteen
+Marvin Gaye
+U2
+Pink Floyd
+Queen
+Madonna
+Beach Boys
+Nirvana
+Who
+David Bowie
+Bob Marley
+Stevie Wonder
+Elvis Presley
+Prince
+Jimi Hendrix
+Bob Dylan
+Rolling Stones
+Led Zeppelin
+Michael Jackson
+Beatles
+Ashenvale
+Badlands
+Dalaran
+Darkshore
+Darnassus
+Desolace
+Duskwood
+Ironforge
+Moonglade
+Scarlet
+Shadowmoon
+Shattrath
+Stonetalon
+Stormwind
+Stranglethorn
+Deadmines
+Hinterlands
+Thunder Bluff
+Undercity
+Westfall
+Winterspring

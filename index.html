@@ -1,0 +1,229 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.raptorize.1.0.js"></script>
+		<script src="marvinize/scripts/marvinize.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="marvinize/css/marvinize.css"></link>
+	<style>
+		body {
+			background-color: #004570;
+			font-family: Century Gothic, sans-serif;
+			margin:0;
+			padding:0;
+		}	
+
+		.box {
+			margin: 50px; 
+			padding: 10px 50px 50px 50px; 
+			max-width: 500px; 
+			background-color: #F0F0F0; 
+			margin-left: auto; 
+			margin-right: auto;
+
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+			
+			min-height: 300px;
+		}
+
+		.button {
+			
+			-moz-box-shadow:inset 0px 0px 0px 0px #caefab;
+			-webkit-box-shadow:inset 0px 0px 0px 0px #caefab;
+			box-shadow:inset 0px 0px 0px 0px #caefab;
+			
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+			background:-moz-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+			background:-webkit-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+			background:-o-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+			background:-ms-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+			background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811',GradientType=0);
+			
+			background-color:#77d42a;
+			
+			-moz-border-radius:4px;
+			-webkit-border-radius:4px;
+			border-radius:4px;
+			
+			border:1px solid #268a16;
+			
+			display:inline-block;
+			color:#306108;
+			font-family:Georgia;
+			font-size:12px;
+			font-weight:bold;
+			padding:6px 24px;
+			text-decoration:none;
+			
+			text-shadow:0px 1px 0px #aade7c;
+			
+			margin-left: auto;
+			margin-right: auto;
+			width: 100px;
+			
+		}
+		
+		.button:hover {
+			
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+			background:-moz-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+			background:-webkit-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+			background:-o-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+			background:-ms-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+			background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a',GradientType=0);
+			
+			background-color:#5cb811;
+		}
+		
+		.button:active {
+			position:relative;
+			top:1px;
+		}
+		
+		#word {
+			font-size: 36px;
+			font-weight: bold;
+		}
+		
+		
+		
+		#container {
+			height: 90%;
+			position: relative;
+		}
+		
+		.footer {
+			position: absolute;
+			bottom: 0;
+			height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			color: #F0F0F0;
+		}
+		
+		a, a:visited, a:hover, a:active {
+			color: 77d42a;
+		}
+
+	</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box">
+				<p>
+					Press the "Go" button below to pick a random word from the approved word list.  Enter a string into the input box to only select words which begin with your string of choice.
+				</p>
+				<div style="text-align: center">
+					<input type="text" id="input" />
+				</div>
+				<br />
+				<div style="text-align: center">
+					<button id="theButton" class="button">go</button>
+					<button id="raptorButton" style="display: none;"></button>
+				</div>
+				<br />
+				<br />
+				<div style="text-align: center">
+					<div id="word"></div>
+				</div>
+				<div style="text-align: center; display: none" id="cartman">
+					<img src="images/cartman.ico" alt="cartman"></img>
+				</div>
+			</div>
+		
+			<div class="footer">
+				<div style="text-align: center">
+					To see the master wordlist, go to <a href="/words.txt">/words.txt</a>.
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			$(document).ready(function() {
+				
+				if (Math.random() > .3) {
+					// marvinize.go();
+				}
+
+				if (typeof String.prototype.startsWith != 'function') {
+						String.prototype.startsWith = function (str){
+						return this.toLowerCase().indexOf(str.toLowerCase()) == 0;
+					};
+				}
+	
+				var words = [];
+				
+				var alreadyGenerated = false;
+				var generatedName = "";
+				
+				var oldInput = "";
+				
+				var go = function() {
+					var input = $("#input").val();
+					
+					if (input != "" && input != oldInput) {
+						alreadyGenerated = false;
+						oldInput = input;
+						$("#cartman").slideUp();
+					}
+					
+					if (alreadyGenerated) {
+						$("#cartman").slideDown();
+						
+						if (input == "") {
+							$("#word").text("I can't let you do that, the sprint name has already been chosen.  It is " + generatedName + " and there's nothing you can do about it.");
+						}
+						else {
+							$("#word").text("I can't let you do that, the sprint name has already been chosen for " + input.toUpperCase() + ".  It is " + generatedName + " and there's nothing you can do about it.");
+						}
+						
+						
+					} else if (input == "r" || input == "R") {
+						$("#raptorButton").trigger('click');
+						$("#word").text("Raptor");
+						
+						alreadyGenerated = true;
+						generatedName = "Raptor";
+					} else {
+						$.get("words.txt", function(data) {
+							words = data.replace("\r", "").split("\n");
+							
+							var input = $("#input").val();
+						
+							var subset = [];
+							for (var i = 0; i < words.length; i++) {
+								if (words[i].startsWith(input)) {
+									subset.push(words[i]);
+								}
+							}
+						
+							if (subset.length > 0) {
+								var max = subset.length;
+								var random = Math.floor(Math.random() * max);
+								
+								generatedName = subset[random];
+								$("#word").text(generatedName);
+								alreadyGenerated = true;
+								
+							} else {
+								$("#word").text("your input's no good fool");
+								$("#cartman").slideDown();
+							}
+						});
+					};
+				}
+				
+				$("#theButton").click(function() {
+					go();
+				});
+				
+				$("#raptorButton").raptorize();
+			});
+		</script>
+	</body>
+</html>
