@@ -2,8 +2,6 @@
 	<head>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.raptorize.1.0.js"></script>
-		<script src="marvinize/scripts/marvinize.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="marvinize/css/marvinize.css"></link>
 	<style>
 		body {
 			background-color: #004570;
@@ -130,9 +128,6 @@
 				<div style="text-align: center">
 					<div id="word"></div>
 				</div>
-				<div style="text-align: center; display: none" id="cartman">
-					<img src="images/cartman.ico" alt="cartman"></img>
-				</div>
 			</div>
 		
 			<div class="footer">
@@ -145,11 +140,6 @@
 		<script type="text/javascript">
 			
 			$(document).ready(function() {
-				
-				if (Math.random() > .3) {
-					// marvinize.go();
-				}
-
 				if (typeof String.prototype.startsWith != 'function') {
 						String.prototype.startsWith = function (str){
 						return this.toLowerCase().indexOf(str.toLowerCase()) == 0;
@@ -157,38 +147,13 @@
 				}
 	
 				var words = [];
-				
-				var alreadyGenerated = false;
-				var generatedName = "";
-				
-				var oldInput = "";
-				
+								
 				var go = function() {
 					var input = $("#input").val();
 					
-					if (input != "" && input != oldInput) {
-						alreadyGenerated = false;
-						oldInput = input;
-						$("#cartman").slideUp();
-					}
-					
-					if (alreadyGenerated) {
-						$("#cartman").slideDown();
-						
-						if (input == "") {
-							$("#word").text("I can't let you do that, the sprint name has already been chosen.  It is " + generatedName + " and there's nothing you can do about it.");
-						}
-						else {
-							$("#word").text("I can't let you do that, the sprint name has already been chosen for " + input.toUpperCase() + ".  It is " + generatedName + " and there's nothing you can do about it.");
-						}
-						
-						
-					} else if (input == "r" || input == "R") {
+					if (input == "r" || input == "R") {
 						$("#raptorButton").trigger('click');
-						$("#word").text("Raptor");
-						
-						alreadyGenerated = true;
-						generatedName = "Raptor";
+						$("#word").text("Raptor");		
 					} else {
 						$.get("words.txt", function(data) {
 							words = data.replace("\r", "").split("\n");
@@ -205,14 +170,9 @@
 							if (subset.length > 0) {
 								var max = subset.length;
 								var random = Math.floor(Math.random() * max);
-								
-								generatedName = subset[random];
-								$("#word").text(generatedName);
-								alreadyGenerated = true;
-								
+								$("#word").text(subset[random]);					
 							} else {
 								$("#word").text("your input's no good fool");
-								$("#cartman").slideDown();
 							}
 						});
 					};
