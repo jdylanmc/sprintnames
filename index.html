@@ -140,33 +140,28 @@
 		<script type="text/javascript">
 			
 			$(document).ready(function() {
-				if (typeof String.prototype.startsWith != 'function') {
-						String.prototype.startsWith = function (str){
-						return this.toLowerCase().indexOf(str.toLowerCase()) == 0;
-					};
-				}
-	
 				var words = [];
 								
 				var go = function() {
 					var input = $("#input").val();
-					
-					if (input == "r" || input == "R") {
+
+					// raptorize on 50% of the r's
+					if ((input == "r" || input == "R") && Math.random() > .5) {
 						$("#raptorButton").trigger('click');
 						$("#word").text("Raptor");		
 					} else {
 						$.get("words.txt", function(data) {
 							words = data.replace("\r", "").split("\n");
-							
-							var input = $("#input").val();
-						
+
 							var subset = [];
+							
+							// dig through all the words and find the ones that start with input
 							for (var i = 0; i < words.length; i++) {
-								if (words[i].startsWith(input)) {
+								if (words[i].toLowerCase().indexOf(input.toLowerCase()) == 0) {
 									subset.push(words[i]);
 								}
 							}
-						
+							
 							if (subset.length > 0) {
 								var max = subset.length;
 								var random = Math.floor(Math.random() * max);
